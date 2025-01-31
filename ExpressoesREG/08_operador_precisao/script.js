@@ -1,9 +1,6 @@
-const reg1 = /[12345]/;
-console.log(reg1.test("Temos o numero 6"));
-console.log(reg1.test("Temos o numero 2"));
-console.log(reg1.test("Temos o numero 23"));
-console.log(reg1.test("Temos o numero 60"));
-console.log(reg1.test("Temos o numero 69"));
-const reg2 = /[0-9]/;
-console.log(reg2.test("Temos o numero 65443443434"));
-console.log(reg2.test("temos o numero"));
+const cep = /\d{5}-\d{3}/;
+console.log(cep.test("14470-000"));
+console.log(cep.test("adad"));
+
+const tel = /\(\d{2}\)\d{4,5}-\d{4}/;
+console.log(tel.test("(48)9999-9999"));
